@@ -1,0 +1,32 @@
+1) Load driver:
+    Class.forName("Driver name")
+        Driver name :- com.mysql.jdbc.Driver 
+        put this code in try catch
+        OR 
+    DriverManager.regesterDriver(new com.mysql.jdbc.Driver());
+
+2) Create a connection:
+        import java.sql.*;
+        Connection con = DriverManager.getConnection("URL","username","password");
+        URL:- "jdbc:mysql://localhost:3306/dbname"
+        username:- "root"
+        password:-"Root@123"
+
+3) Create a Query, Statement, PreraredStatement, CallableStatement
+    Ex:- String s = select * from Student;
+
+    Statement stmt = con.createStatement();
+    ResultSet rs =  stmt.excuteQuery(q); for select its return type is resultset;
+        OR
+    stmt.excuteUpdate(); for Update, Insert, delete
+
+4)Process the data from ResultSet
+    while(set.next()){
+        int id = set.getInt("ID");
+        String name = set.getString("name");
+        print(ID);
+        print(name);
+    }
+
+5) Close the connection:
+    con.close();
