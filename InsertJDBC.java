@@ -6,7 +6,7 @@ public class InsertJDBC{
 			//Load a driver
 			Class.forName("com.mysql.jdbc.Driver");
 			//Connect to database
-			String URL = "jdbc:mysql://Localhost:3306/youtube";
+			String URL = "jdbc:mysql://Localhost:3307/youtube";
 			String username = "root";
 			String pass = "Root@123";
 			Connection con = DriverManager.getConnection(URL,username,pass);

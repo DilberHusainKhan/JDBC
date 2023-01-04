@@ -8,7 +8,7 @@ public class CreateTableJDBC {
             //Load JDBC Driver class
             Class.forName("com.mysql.jdbc.Driver");
             // Connect to database
-            String connectionURL = "jdbc:mysql://localhost:3306/youtube";
+            String connectionURL = "jdbc:mysql://localhost:3307/youtube";
             String username = "root";
             String password ="Root@123";
             Connection con = DriverManager.getConnection(connectionURL,username,password);

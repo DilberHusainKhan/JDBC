@@ -6,7 +6,7 @@ public class FirstJDBC {
             // Load the JDBC driver class
             Class.forName("com.mysql.jdbc.Driver");
             // Create a connection to the database
-            String URL = "jdbc:mysql://localhost:3306/youtube";
+            String URL = "jdbc:mysql://localhost:3307/youtube";
             String username = "root";
             String password = "Root@123";
 
